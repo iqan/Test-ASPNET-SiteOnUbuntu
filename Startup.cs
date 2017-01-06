@@ -38,13 +38,13 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            /*services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+           // services.AddDbContext<ApplicationDbContext>(options =>
+                //options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                //.AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
-            */
+            
             services.AddMvc();
 
             /*
